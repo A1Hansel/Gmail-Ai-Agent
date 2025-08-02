@@ -24,7 +24,7 @@ PhoneNum = os.getenv("PhoneNum")
 MyName = 'Andrew'                  #Put your name here
 EMAIL = 'a123hansel@gmail.com'
 TextNotification = False                    #True if you want to recieve texts
-PHONE_EMAIL = (f"{PhoneNum}@vtext.com")        #Only needed for text notifications  (Put your phone number where it says PhoneNum)  
+PHONE_EMAIL = (f"{PhoneNum}@vtext.com")        #Only needed for text notifications  (Put your phone number where it says PhoneNum) and change the @vtext.com depending on your carrier
 local_tz = pytz.timezone("America/Denver")        #Put in timezone
 
 days_back = 1        #How many days of emails the agent will look back upon
@@ -598,6 +598,7 @@ try:
     run_agent()
 except KeyboardInterrupt: #Allows the program to be interuppted
     print("🛑 Agent execution interrupted by user.")
+
 
 
 
